@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Spectral&display=swap');
+@import 'my-vars.css'; /* with this we can connect other css style in tjis */
+@import 'my-classes.css';
+
+/* To use variables */
+
+
+body {
+    font-family: var(--font-one);
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+    font-family: var(--font-two);
+    font-weight: 800;
+    /* color: var(--color-two); */
+}
+
+a {
+    text-decoration: none;
+}
+/*
+.btn,
+.btn:focus,
+.btn:active {
+    outline: none !important;
+    border: none !important;
+}
+*/
+/* nav  */
+nav{
+    background-color: rgb(255,255,255, 0.9);
+    box-shadow: 0 3px 9px rgba(0,0,0, 0.1);
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.navbar-brand img{
+    width: 38px;
+}
+
+.nav-item {
+    border-bottom: 1px solid rgba(0,0,0, 0.05);
+}
+
+.nav-link:hover {
+    color: var(--color-one) !important; /*whenerver we want to overwrite bootstrao classes we should take important */
+}
+/* /nav */
+
+/* Section-title */
+.section-title {
+    text-align: center;
+    padding: 20px 0;  
+}
+
+.section-title h4 {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 6px;
+    color: var(--color-one);
+}
+.section-title h4::after{
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 4px;
+    background-color: var(--color-two);
+    left: 50%;
+    bottom: -3px;
+    transform: translateX(-50%);
+    animation: lineWidth 3s ease-in-out infinite;
+}
+
+/* /Section-title */
+
+/* top-sale */
+#top-sale .product a {
+    overflow: hidden; /* link should be till that part */
+}
+#top-sale .product img {
+    transition: all 0.5s ease-in-out;
+}
+#top-sale .product img:hover {
+    transform: scale(1.1);
+}
+#top-sale .owl-carousel .owl-nav button {
+    position: absolute;
+    top: 30%;
+    outline: none;
+}
+#top-sale .owl-carousel .owl-nav button span {
+    font-size: 35px;
+}
+#top-sale .owl-carousel .owl-nav button.owl-prev {
+    left: 0px;
+    margin-left: -8px;
+}
+#top-sale .owl-carousel .owl-nav button.owl-next {
+    right: 0px;
+    margin-right: -8px;
+}
+#top-sale .owl-carousel .owl-nav button:hover {
+    background-color: #fff;
+    color: var(--color-one);
+}
+/* /top-sale */
+
+/* Special-price */
+#special-price .grid-item {
+    width: 200px;
+}
+#special-price .grid-item img {
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+}
+#special-price .grid-item img:hover {
+    transform: scale(1.1);
+}
+#filters button {
+    margin: 6px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    transition: all 0.3s ease-in-out;
+}
+#filters button:hover, 
+#filters button.active-filter { /*means the one which has class active filter will have the below styles */
+    background-color: var(--color-one);
+    color: #fff;
+}
+/* /Special-price */
+
+/* New Phones */
+#new-phones {
+    padding-bottom: 60px;
+}
+#new-phones .item {
+    background-color: rgba(0,0,0,0.02);
+}
+#new-phones .product-details {
+    padding: 10px 0;
+}
+#new-phones .product a {
+    overflow: hidden;
+}
+#new-phones .product img{
+    transition: all 0.3s ease-in-out;
+}
+#new-phones .product img:hover{
+    transform: scale(1.1);
+}
+/* /New Phones */
+
+/* footer */
+#footer a:hover {
+    color: var(--color-one) !important;
+} 
+/* /footer */
+
+/* Product */
+#product .color div > div{  /* means div within div i.e all children divs are selected */
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.3s ease-in-out;
+}
+#product .color div > div:hover,
+#product .color div > div.active-color{
+    opacity: 1;
+    transform: scale(0.96);
+}
+#product .active-color{
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+    border: 0.2px solid rgb(151, 142, 142);
+}
+
+#product #size .active-size {
+    background-color: var(--color-one) !important;
+}
+#product #size .active-size button {
+    color: #fff;
+}
+/* /Product */
+
+/* Animation */
+@keyframes lineWidth {
+    50% {
+        width: 100%;
+    }
+}
+
+
+
+/* media queries */
+@media (min-width: 992px){
+    .nav-item {
+        border-bottom: none;
+    }
+}

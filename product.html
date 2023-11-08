@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Mobiles</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <!-- Owl carousel 2 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- <h1><i class="fa-solid fa-mobile-screen-button"></i> Smart Mobiles <i class="fa-solid fa-cart-shopping"></i></h1> -->
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg py-2 px-2 px-sm-3 fixed-top">  <!-- semantic tag-->
+        <a href="index.html" class="navbar-brand d-flex justify-content-between align-items-center order-lg-0">
+            <img src="assets/smart-mobiles-logo.png" alt="Site Icon">
+            <span class="text-uppercase fw-bold clr-one">Smart Mobiles</span>
+        </a>
+        <div class="order-lg-2">
+            <div class="cart-box d-inline-block">
+                <a href="cart.html" class="rounded-pill bg-dark py-2">
+                    <span class="px-2 text-white">
+                        <i class="fa-solid fa-cart-shopping"></i> <!-- Using fontawesome for cart icon -->
+                    </span>
+                    <span class="rounded-pill bg-light text-dark px-3 py-2">0</span>
+                </a>
+            </div>
+            <button class="btn ms-1">
+                <i class="fa-solid fa-user"></i>
+                <span class="fw-bold">Login</span>
+            </button>
+        </div>
+        <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+            <ul class="navbar-nav text-center mx-auto">
+                <li class="nav-item p-2">
+                    <a class="nav-link text-capitalize text-dark fz-18" href="index.html">home</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link text-capitalize text-dark fz-18" href="#top-sale">top sale</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link text-capitalize text-dark fz-18" href="#special-price">Special Price</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link text-capitalize text-dark fz-18" href="#new-phones">new phones</a>
+                </li>
+                <li class="nav-item p-2">
+                    <a class="nav-link text-capitalize text-dark fz-18" href="product.html">product</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- /nav -->
+
+    <!-- main -->
+    <div id="main">
+
+        <!-- product -->
+            <section id="product" class="pt-3 px-2 px-sm-0">
+                <div class="container py-5">
+                    <div class="row gy-3">
+                        <div class="col-sm-6">
+                            <img src="assets/products/1.png" alt="product 1" class="img-fluid">
+                            <div class="row p-1">
+                                <div class="col">
+                                    <button class="btn btn-danger form-control">
+                                        Proceed to Buy
+                                    </button>
+                                </div>
+                                <div class="col">
+                                    <button class="btn btn-warning form-control">
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 py-5">
+                            <h5>Samsung Galaxy 10</h5>
+                            <small>by <b>Samsung</b></small>
+                            <div class="py-2 d-flex">
+                                <div class="rating clr-one fz-14">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <a href="#" class="ms-2">999 ratings | 99 answered questions</a>
+                            </div>
+                            <hr class="m-1">
+                            <!-- product price -->
+                            <table class="my-3">
+                                <tr class="fz-14">
+                                    <td class="px-2 text-end">Regular price: </td>
+                                    <td class="text-secondary fz-16"><s>$199</s></td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2 text-end">Offer price:</td>
+                                    <td class="text-danger fz-18">$<span class="price">153</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="px-2 text-end">You Save:</td>
+                                    <td class="text-success fz-16">$<span class="price">46</span></td>
+                                </tr>
+                            </table>
+                            <!-- /product price -->
+                            <!-- Policy -->
+                            <div id="policy">
+                                <div class="d-flex">
+                                    <div class="return text-center mx-3">
+                                        <div class="clr-one my-2">
+                                            <i class="fa fa-retweet border p-2 rounded-pill"></i>
+                                        </div>
+                                        <a href="#" class="fz-14">10 days<br>Replacement</a>
+                                    </div>
+                                    <div class="return text-center mx-3">
+                                        <div class="clr-one my-2">
+                                            <i class="fa fa-truck border p-2 rounded-pill"></i>
+                                        </div>
+                                        <a href="#" class="fz-14">Fast Track<br>Delivered</a>
+                                    </div>
+                                    <div class="return text-center mx-3">
+                                        <div class="clr-one my-2">
+                                            <i class="fa fa-check-double border p-2 rounded-pill"></i>
+                                        </div>
+                                        <a href="#" class="fz-14">3 years<br>Warranty</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Policy -->
+                            <hr class="my-1">
+
+                            <!-- Order Details -->
+                            <div id="order-details" class="mt-3">
+                                <p class="fz-14">Delivered by <span class="text-danger fz-16">12-12-2023</span></p>
+                                <p class="fz-14"><i class="fa-solid fa-location-dot me-1"></i> Delivered to <span class="text-danger fz-16">Customer Name</span>&nbsp;<span>- 000013.</span></p>
+                            </div>
+                            <!-- /Order Details -->
+
+                            <!-- Color and Qty -->
+                            <div class="row">
+                                <div class="col-6 py-3">
+                                    <div class="color">
+                                        <h6>Color :</h6>
+                                        <div class="d-flex">
+                                            <div class="bg-primary p-2 rounded-circle mx-2 active-color"><button class="btn fz-14"></button></div>
+                                            <div class="bg-danger p-2 rounded-circle mx-2"><button class="btn fz-14"></button></div>
+                                            <div class="bg-dark p-2 rounded-circle mx-2"><button class="btn fz-14"></button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 py-3">
+                                    <h6>Qty :</h6>
+                                    <div class="qty px-4">
+                                        <div class="d-flex">
+                                            <button class="btn qty-down bg-light" type="button"><i class="fa fa-minus"></i></button>
+                                            <input type="text" class="qty-input form-control text-center w-25 p-1" style="min-width: 42px;" value="1" disabled>  <!-- disabled will not allow anything to wite n input-->
+                                            <button class="btn qty-up bg-light" type="button"><i class="fa fa-plus"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Color and Qty -->
+
+                            <!-- Size -->
+                            <div id="size" class="my-3">
+                                <h6>Size :</h6>
+                                <div class="d-flex justify-content-between px-3 ">
+                                    <div class="border p-2 active-size">
+                                        <button class="btn p-0">4GB RAM</button>
+                                    </div>
+                                    <div class="border p-2">
+                                        <button class="btn p-0">6GB RAM</button>
+                                    </div>
+                                    <div class="border p-2">
+                                        <button class="btn p-0">8GB RAM</button>
+                                    </div>
+                                    <div class="border p-2">
+                                        <button class="btn p-0">16GB RAM</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Size -->
+                        </div>
+                        <!-- Product Description -->
+                        <div class="col-12">
+                            <h5>Product Description</h5>
+                            <hr class="mt-0">
+                            <div class="fz-14">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt enim sit adipisci eligendi neque sed, qui corporis soluta repellat earum nisi odio dolores quasi et voluptas odit ullam cum natus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus a ratione laudantium, blanditiis atque animi.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt enim sit adipisci eligendi neque sed, qui corporis soluta repellat earum nisi odio dolores quasi et voluptas odit ullam cum natus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, laborum.</p>
+                            </div>
+                        </div>
+                        <!-- /Product Description -->
+                    </div>
+                </div>
+            </section>
+        <!-- /product -->
+
+        <!-- top-sale -->
+        <section id="top-sale" class="img-fluid">
+            <div class="container py-5">
+                <div class="section-title py-5">
+                    <h4>Top Sale</h4>
+                </div>
+                <!-- owl-carousel -->
+                <div class="owl-carousel owl-theme">
+                    <div class="item py-2">
+                        <div class="product">
+                            <a href="#">
+                                <img src="assets/products/1.png" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="product-details text-center">
+                            <h6>Samsung galaxy 10</h6>
+                            <div class="rating text-warning">
+                                <i class="fa fa-star"></i>   <!--take from font awesome-->
+                                <i class="fa fa-star"></i>  
+                                <i class="fa fa-star"></i>  
+                                <i class="fa fa-star"></i>  
+                                <i class="fa-regular fa-star"></i>  
+                            </div>
+                            <div class="price-box py-2">
+                                <small><s>$199</s></small>
+                                <span class="price ms-1">$153</span>
+                            </div>
+                            <button class="btn btn-sm btn-warning">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="item py-2">
+                        <div class="product">
+                            <a href="#">
+                                <img src="assets/products/2.png" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="product-details text-center">
+                            <h6>Samsung galaxy 10</h6>
+                            <div class="rating text-warning">
+                                <i class="fa fa-star"></i>   <!--take from font awesome-->
+                                <i class="fa fa-star"></i>  
+                                <i class="fa fa-star"></i>  
+                                <i class="fa fa-star"></i>  
+                                <i class="fa-regular fa-star"></i>  
+                            </div>
+                            <div class="price-box py-2">
+                                <small><s>$199</s></small>
+                                <span class="price ms-1">$153</span>
+                            </div>
+                            <button class="btn btn-sm btn-warning">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="item py-2">
+                        <div class="product">
+                            <a href="#" class="img-fluid">
+                                <img src="assets/products/6.png" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="product-details text-center">
+                            <h6>Samsung galaxy 10</h6>
+                            <div class="rating text-warning">
+                                <i class="fa fa-star"></i>   <!--take from font awesome-->
+                                <i class="fa fa-star"></i>  
+                                <i class="fa fa-star"></i>  
+                                <i class="fa fa-star"></i>  
+                                <i class="fa-regular fa-star"></i>  
+                            </div>
+                            <div class="price-box py-2">
+                                <small><s>$199</s></small>
+                                <span class="price ms-1">$153</span>
+                            </div>
+                            <button class="btn btn-sm btn-warning">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="item py-2">
+                        <div class="product">
+                            <a href="#" class="img-fluid">
+                                <img src="assets/products/11.png" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="product-details text-center">
+                            <h6>Samsung galaxy 10</h6>
+                            <div class="rating text-warning">
+                                <i class="fa fa-star"></i>   <!--take from font awesome-->
+                                <i class="fa fa-star"></i>  
+                                <i class="fa fa-star"></i>  
+                                <i class="fa fa-star"></i>  
+                                <i class="fa-regular fa-star"></i>  
+                            </div>
+                            <div class="price-box py-2">
+                                <small><s>$199</s></small>
+                                <span class="price ms-1">$153</span>
+                            </div>
+                            <button class="btn btn-sm btn-warning">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="item py-2">
+                        <div class="product">
+                            <a href="#" class="img-fluid">
+                                <img src="assets/products/13.png" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="product-details text-center">
+                            <h6>Samsung galaxy 10</h6>
+                            <div class="rating text-warning">
+                                <i class="fa fa-star"></i>   <!--take from font awesome-->
+                                <i class="fa fa-star"></i>  
+                                <i class="fa fa-star"></i>  
+                                <i class="fa fa-star"></i>  
+                                <i class="fa-regular fa-star"></i>  
+                            </div>
+                            <div class="price-box py-2">
+                                <small><s>$199</s></small>
+                                <span class="price ms-1">$153</span>
+                            </div>
+                            <button class="btn btn-sm btn-warning">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="item py-2">
+                        <div class="product">
+                            <a href="#" class="img-fluid">
+                                <img src="assets/products/14.png" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="product-details text-center">
+                            <h6>Samsung galaxy 10</h6>
+                            <div class="rating text-warning">
+                                <i class="fa fa-star"></i>   <!--take from font awesome-->
+                                <i class="fa fa-star"></i>  
+                                <i class="fa fa-star"></i>  
+                                <i class="fa fa-star"></i>  
+                                <i class="fa-regular fa-star"></i>  
+                            </div>
+                            <div class="price-box py-2">
+                                <small><s>$199</s></small>
+                                <span class="price ms-1">$153</span>
+                            </div>
+                            <button class="btn btn-sm btn-warning">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="item py-2">
+                        <div class="product">
+                            <a href="#" class="img-fluid">
+                                <img src="assets/products/15.png" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="product-details text-center">
+                            <h6>Samsung galaxy 10</h6>
+                            <div class="rating text-warning">
+                                <i class="fa fa-star"></i>   <!--take from font awesome-->
+                                <i class="fa fa-star"></i>  
+                                <i class="fa fa-star"></i>  
+                                <i class="fa fa-star"></i>  
+                                <i class="fa-regular fa-star"></i>  
+                            </div>
+                            <div class="price-box py-2">
+                                <small><s>$199</s></small>
+                                <span class="price ms-1">$153</span>
+                            </div>
+                            <button class="btn btn-sm btn-warning">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="item py-2">
+                        <div class="product">
+                            <a href="#" class="img-fluid">
+                                <img src="assets/products/17.png" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="product-details text-center">
+                            <h6>Samsung galaxy 10</h6>
+                            <div class="rating text-warning">
+                                <i class="fa fa-star"></i>   <!--take from font awesome-->
+                                <i class="fa fa-star"></i>  
+                                <i class="fa fa-star"></i>  
+                                <i class="fa fa-star"></i>  
+                                <i class="fa-regular fa-star"></i>  
+                            </div>
+                            <div class="price-box py-2">
+                                <small><s>$199</s></small>
+                                <span class="price ms-1">$153</span>
+                            </div>
+                            <button class="btn btn-sm btn-warning">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- /owl-carousel -->
+            </div>
+        </section>
+        <!-- /top-sale -->
+
+    </div>
+    <!-- /main -->
+
+    <!-- footer -->
+    <footer id="footer" class="bg-dark text-white">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 py-3">
+                    <h4>Smart Mobiles</h4>
+                    <p class="text-white-50 fz-14">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit a in illo minus eaque. Cum deserunt quas iure reiciendis nihil!</p>
+                </div>
+                <div class="col-md-4 col-sm-6 py-3">
+                    <h5>Newsletter</h5>
+                    <form action="">
+                        <div class="row g-0"> 
+                            <div class="col-8">
+                                <input type="email" name="email" class="form-control fz-5" placeholder="email">
+                            </div>
+                            <div class="col-4">
+                                <button class="btn btn-primary ms-1" name="email_submit">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-4 col-sm-6 py-3">
+                    <h5>Information</h5>
+                    <div class="d-flex flex-column flex-wrap fz-14">
+                        <a href="#" class="text-white-50 mb-1">About Us</a>
+                        <a href="#" class="text-white-50 mb-1">Delivery Info</a>
+                        <a href="#" class="text-white-50 mb-1">Privacy Policy</a>
+                        <a href="#" class="text-white-50 mb-1">Terms & Conditions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /footer -->
+    
+    
+    <!-- dummy -->
+    <!-- It is created for testig purpose -->
+    <!-- <div class="container pt-5 mt-5">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis corrupti facere, recusandae aliquid a placeat ex, quo saepe, consectetur odit nulla! Illo veniam nisi sed, ducimus provident ea eius excepturi natus ex dicta odit molestiae quo velit dignissimos quis temporibus, labore officiis, pariatur fugiat hic esse. Totam tenetur pariatur, voluptate a rem, iusto commodi consectetur dolorum saepe doloremque ratione vel earum, odio incidunt ex eos facilis non. Beatae fugit eos nihil, commodi praesentium qui, a dicta, nisi alias ullam eligendi ipsum sint exercitationem iste ducimus dolorum tenetur repudiandae in? Accusamus eum, odio aperiam voluptates atque modi provident velit, reprehenderit iure magni labore culpa. Ullam deserunt impedit magni optio magnam sequi culpa reiciendis delectus, harum itaque voluptas neque inventore voluptates quos incidunt perspiciatis quasi repellendus ex tenetur necessitatibus eligendi nesciunt reprehenderit! Enim repudiandae, saepe fugit eveniet consectetur, aliquid quis inventore non placeat quibusdam magnam fuga harum nihil est officiis earum delectus voluptate dicta corrupti culpa dolorem veniam. Hic doloribus sequi accusamus laborum, id ratione magnam quas. Modi adipisci ex, maiores labore doloribus quia et dolore iure eaque totam iusto optio ipsa commodi autem similique eum nemo exercitationem quos. Nam, laudantium veniam? Soluta dolorum magnam, placeat assumenda distinctio architecto a totam numquam. Architecto illum at alias amet commodi quidem aperiam tenetur quae reprehenderit nemo, earum facilis tempore nisi tempora labore rerum? Dolores veritatis earum neque suscipit maxime, nihil quaerat, officia esse corrupti architecto exercitationem harum quis? Ducimus eius aliquam voluptatibus cumque commodi doloremque. Aspernatur veritatis qui veniam tempora maxime neque, aliquam quas, sit corrupti voluptates deleniti. Eveniet ad dolorum odio officia harum pariatur error, recusandae saepe rem quae deserunt amet mollitia numquam, inventore incidunt officiis libero fuga suscipit veritatis et provident ut magni! Fugit officia nemo fugiat error sed, nihil delectus illum neque. Deserunt ducimus corrupti maiores assumenda quis reprehenderit accusamus eius.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis corrupti facere, recusandae aliquid a placeat ex, quo saepe, consectetur odit nulla! Illo veniam nisi sed, ducimus provident ea eius excepturi natus ex dicta odit molestiae quo velit dignissimos quis temporibus, labore officiis, pariatur fugiat hic esse. Totam tenetur pariatur, voluptate a rem, iusto commodi consectetur dolorum saepe doloremque ratione vel earum, odio incidunt ex eos facilis non. Beatae fugit eos nihil, commodi praesentium qui, a dicta, nisi alias ullam eligendi ipsum sint exercitationem iste ducimus dolorum tenetur repudiandae in? Accusamus eum, odio aperiam voluptates atque modi provident velit, reprehenderit iure magni labore culpa. Ullam deserunt impedit magni optio magnam sequi culpa reiciendis delectus, harum itaque voluptas neque inventore voluptates quos incidunt perspiciatis quasi repellendus ex tenetur necessitatibus eligendi nesciunt reprehenderit! Enim repudiandae, saepe fugit eveniet consectetur, aliquid quis inventore non placeat quibusdam magnam fuga harum nihil est officiis earum delectus voluptate dicta corrupti culpa dolorem veniam. Hic doloribus sequi accusamus laborum, id ratione magnam quas. Modi adipisci ex, maiores labore doloribus quia et dolore iure eaque totam iusto optio ipsa commodi autem similique eum nemo exercitationem quos. Nam, laudantium veniam? Soluta dolorum magnam, placeat assumenda distinctio architecto a totam numquam. Architecto illum at alias amet commodi quidem aperiam tenetur quae reprehenderit nemo, earum facilis tempore nisi tempora labore rerum? Dolores veritatis earum neque suscipit maxime, nihil quaerat, officia esse corrupti architecto exercitationem harum quis? Ducimus eius aliquam voluptatibus cumque commodi doloremque. Aspernatur veritatis qui veniam tempora maxime neque, aliquam quas, sit corrupti voluptates deleniti. Eveniet ad dolorum odio officia harum pariatur error, recusandae saepe rem quae deserunt amet mollitia numquam, inventore incidunt officiis libero fuga suscipit veritatis et provident ut magni! Fugit officia nemo fugiat error sed, nihil delectus illum neque. Deserunt ducimus corrupti maiores assumenda quis reprehenderit accusamus eius.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis corrupti facere, recusandae aliquid a placeat ex, quo saepe, consectetur odit nulla! Illo veniam nisi sed, ducimus provident ea eius excepturi natus ex dicta odit molestiae quo velit dignissimos quis temporibus, labore officiis, pariatur fugiat hic esse. Totam tenetur pariatur, voluptate a rem, iusto commodi consectetur dolorum saepe doloremque ratione vel earum, odio incidunt ex eos facilis non. Beatae fugit eos nihil, commodi praesentium qui, a dicta, nisi alias ullam eligendi ipsum sint exercitationem iste ducimus dolorum tenetur repudiandae in? Accusamus eum, odio aperiam voluptates atque modi provident velit, reprehenderit iure magni labore culpa. Ullam deserunt impedit magni optio magnam sequi culpa reiciendis delectus, harum itaque voluptas neque inventore voluptates quos incidunt perspiciatis quasi repellendus ex tenetur necessitatibus eligendi nesciunt reprehenderit! Enim repudiandae, saepe fugit eveniet consectetur, aliquid quis inventore non placeat quibusdam magnam fuga harum nihil est officiis earum delectus voluptate dicta corrupti culpa dolorem veniam. Hic doloribus sequi accusamus laborum, id ratione magnam quas. Modi adipisci ex, maiores labore doloribus quia et dolore iure eaque totam iusto optio ipsa commodi autem similique eum nemo exercitationem quos. Nam, laudantium veniam? Soluta dolorum magnam, placeat assumenda distinctio architecto a totam numquam. Architecto illum at alias amet commodi quidem aperiam tenetur quae reprehenderit nemo, earum facilis tempore nisi tempora labore rerum? Dolores veritatis earum neque suscipit maxime, nihil quaerat, officia esse corrupti architecto exercitationem harum quis? Ducimus eius aliquam voluptatibus cumque commodi doloremque. Aspernatur veritatis qui veniam tempora maxime neque, aliquam quas, sit corrupti voluptates deleniti. Eveniet ad dolorum odio officia harum pariatur error, recusandae saepe rem quae deserunt amet mollitia numquam, inventore incidunt officiis libero fuga suscipit veritatis et provident ut magni! Fugit officia nemo fugiat error sed, nihil delectus illum neque. Deserunt ducimus corrupti maiores assumenda quis reprehenderit accusamus eius.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis corrupti facere, recusandae aliquid a placeat ex, quo saepe, consectetur odit nulla! Illo veniam nisi sed, ducimus provident ea eius excepturi natus ex dicta odit molestiae quo velit dignissimos quis temporibus, labore officiis, pariatur fugiat hic esse. Totam tenetur pariatur, voluptate a rem, iusto commodi consectetur dolorum saepe doloremque ratione vel earum, odio incidunt ex eos facilis non. Beatae fugit eos nihil, commodi praesentium qui, a dicta, nisi alias ullam eligendi ipsum sint exercitationem iste ducimus dolorum tenetur repudiandae in? Accusamus eum, odio aperiam voluptates atque modi provident velit, reprehenderit iure magni labore culpa. Ullam deserunt impedit magni optio magnam sequi culpa reiciendis delectus, harum itaque voluptas neque inventore voluptates quos incidunt perspiciatis quasi repellendus ex tenetur necessitatibus eligendi nesciunt reprehenderit! Enim repudiandae, saepe fugit eveniet consectetur, aliquid quis inventore non placeat quibusdam magnam fuga harum nihil est officiis earum delectus voluptate dicta corrupti culpa dolorem veniam. Hic doloribus sequi accusamus laborum, id ratione magnam quas. Modi adipisci ex, maiores labore doloribus quia et dolore iure eaque totam iusto optio ipsa commodi autem similique eum nemo exercitationem quos. Nam, laudantium veniam? Soluta dolorum magnam, placeat assumenda distinctio architecto a totam numquam. Architecto illum at alias amet commodi quidem aperiam tenetur quae reprehenderit nemo, earum facilis tempore nisi tempora labore rerum? Dolores veritatis earum neque suscipit maxime, nihil quaerat, officia esse corrupti architecto exercitationem harum quis? Ducimus eius aliquam voluptatibus cumque commodi doloremque. Aspernatur veritatis qui veniam tempora maxime neque, aliquam quas, sit corrupti voluptates deleniti. Eveniet ad dolorum odio officia harum pariatur error, recusandae saepe rem quae deserunt amet mollitia numquam, inventore incidunt officiis libero fuga suscipit veritatis et provident ut magni! Fugit officia nemo fugiat error sed, nihil delectus illum neque. Deserunt ducimus corrupti maiores assumenda quis reprehenderit accusamus eius.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis corrupti facere, recusandae aliquid a placeat ex, quo saepe, consectetur odit nulla! Illo veniam nisi sed, ducimus provident ea eius excepturi natus ex dicta odit molestiae quo velit dignissimos quis temporibus, labore officiis, pariatur fugiat hic esse. Totam tenetur pariatur, voluptate a rem, iusto commodi consectetur dolorum saepe doloremque ratione vel earum, odio incidunt ex eos facilis non. Beatae fugit eos nihil, commodi praesentium qui, a dicta, nisi alias ullam eligendi ipsum sint exercitationem iste ducimus dolorum tenetur repudiandae in? Accusamus eum, odio aperiam voluptates atque modi provident velit, reprehenderit iure magni labore culpa. Ullam deserunt impedit magni optio magnam sequi culpa reiciendis delectus, harum itaque voluptas neque inventore voluptates quos incidunt perspiciatis quasi repellendus ex tenetur necessitatibus eligendi nesciunt reprehenderit! Enim repudiandae, saepe fugit eveniet consectetur, aliquid quis inventore non placeat quibusdam magnam fuga harum nihil est officiis earum delectus voluptate dicta corrupti culpa dolorem veniam. Hic doloribus sequi accusamus laborum, id ratione magnam quas. Modi adipisci ex, maiores labore doloribus quia et dolore iure eaque totam iusto optio ipsa commodi autem similique eum nemo exercitationem quos. Nam, laudantium veniam? Soluta dolorum magnam, placeat assumenda distinctio architecto a totam numquam. Architecto illum at alias amet commodi quidem aperiam tenetur quae reprehenderit nemo, earum facilis tempore nisi tempora labore rerum? Dolores veritatis earum neque suscipit maxime, nihil quaerat, officia esse corrupti architecto exercitationem harum quis? Ducimus eius aliquam voluptatibus cumque commodi doloremque. Aspernatur veritatis qui veniam tempora maxime neque, aliquam quas, sit corrupti voluptates deleniti. Eveniet ad dolorum odio officia harum pariatur error, recusandae saepe rem quae deserunt amet mollitia numquam, inventore incidunt officiis libero fuga suscipit veritatis et provident ut magni! Fugit officia nemo fugiat error sed, nihil delectus illum neque. Deserunt ducimus corrupti maiores assumenda quis reprehenderit accusamus eius.</p>
+    </div>  
+    <div class="container pt-5" id="offers">
+        <h1 class="pt-5">Offers</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis corrupti facere, recusandae aliquid a placeat ex, quo saepe, consectetur odit nulla! Illo veniam nisi sed, ducimus provident ea eius excepturi natus ex dicta odit molestiae quo velit dignissimos quis temporibus, labore officiis, pariatur fugiat hic esse. Totam tenetur pariatur, voluptate a rem, iusto commodi consectetur dolorum saepe doloremque ratione vel earum, odio incidunt ex eos facilis non. Beatae fugit eos nihil, commodi praesentium qui, a dicta, nisi alias ullam eligendi ipsum sint exercitationem iste ducimus dolorum tenetur repudiandae in? Accusamus eum, odio aperiam voluptates atque modi provident velit, reprehenderit iure magni labore culpa. Ullam deserunt impedit magni optio magnam sequi culpa reiciendis delectus, harum itaque voluptas neque inventore voluptates quos incidunt perspiciatis quasi repellendus ex tenetur necessitatibus eligendi nesciunt reprehenderit! Enim repudiandae, saepe fugit eveniet consectetur, aliquid quis inventore non placeat quibusdam magnam fuga harum nihil est officiis earum delectus voluptate dicta corrupti culpa dolorem veniam. Hic doloribus sequi accusamus laborum, id ratione magnam quas. Modi adipisci ex, maiores labore doloribus quia et dolore iure eaque totam iusto optio ipsa commodi autem similique eum nemo exercitationem quos. Nam, laudantium veniam? Soluta dolorum magnam, placeat assumenda distinctio architecto a totam numquam. Architecto illum at alias amet commodi quidem aperiam tenetur quae reprehenderit nemo, earum facilis tempore nisi tempora labore rerum? Dolores veritatis earum neque suscipit maxime, nihil quaerat, officia esse corrupti architecto exercitationem harum quis? Ducimus eius aliquam voluptatibus cumque commodi doloremque. Aspernatur veritatis qui veniam tempora maxime neque, aliquam quas, sit corrupti voluptates deleniti. Eveniet ad dolorum odio officia harum pariatur error, recusandae saepe rem quae deserunt amet mollitia numquam, inventore incidunt officiis libero fuga suscipit veritatis et provident ut magni! Fugit officia nemo fugiat error sed, nihil delectus illum neque. Deserunt ducimus corrupti maiores assumenda quis reprehenderit accusamus eius.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis corrupti facere, recusandae aliquid a placeat ex, quo saepe, consectetur odit nulla! Illo veniam nisi sed, ducimus provident ea eius excepturi natus ex dicta odit molestiae quo velit dignissimos quis temporibus, labore officiis, pariatur fugiat hic esse. Totam tenetur pariatur, voluptate a rem, iusto commodi consectetur dolorum saepe doloremque ratione vel earum, odio incidunt ex eos facilis non. Beatae fugit eos nihil, commodi praesentium qui, a dicta, nisi alias ullam eligendi ipsum sint exercitationem iste ducimus dolorum tenetur repudiandae in? Accusamus eum, odio aperiam voluptates atque modi provident velit, reprehenderit iure magni labore culpa. Ullam deserunt impedit magni optio magnam sequi culpa reiciendis delectus, harum itaque voluptas neque inventore voluptates quos incidunt perspiciatis quasi repellendus ex tenetur necessitatibus eligendi nesciunt reprehenderit! Enim repudiandae, saepe fugit eveniet consectetur, aliquid quis inventore non placeat quibusdam magnam fuga harum nihil est officiis earum delectus voluptate dicta corrupti culpa dolorem veniam. Hic doloribus sequi accusamus laborum, id ratione magnam quas. Modi adipisci ex, maiores labore doloribus quia et dolore iure eaque totam iusto optio ipsa commodi autem similique eum nemo exercitationem quos. Nam, laudantium veniam? Soluta dolorum magnam, placeat assumenda distinctio architecto a totam numquam. Architecto illum at alias amet commodi quidem aperiam tenetur quae reprehenderit nemo, earum facilis tempore nisi tempora labore rerum? Dolores veritatis earum neque suscipit maxime, nihil quaerat, officia esse corrupti architecto exercitationem harum quis? Ducimus eius aliquam voluptatibus cumque commodi doloremque. Aspernatur veritatis qui veniam tempora maxime neque, aliquam quas, sit corrupti voluptates deleniti. Eveniet ad dolorum odio officia harum pariatur error, recusandae saepe rem quae deserunt amet mollitia numquam, inventore incidunt officiis libero fuga suscipit veritatis et provident ut magni! Fugit officia nemo fugiat error sed, nihil delectus illum neque. Deserunt ducimus corrupti maiores assumenda quis reprehenderit accusamus eius.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis corrupti facere, recusandae aliquid a placeat ex, quo saepe, consectetur odit nulla! Illo veniam nisi sed, ducimus provident ea eius excepturi natus ex dicta odit molestiae quo velit dignissimos quis temporibus, labore officiis, pariatur fugiat hic esse. Totam tenetur pariatur, voluptate a rem, iusto commodi consectetur dolorum saepe doloremque ratione vel earum, odio incidunt ex eos facilis non. Beatae fugit eos nihil, commodi praesentium qui, a dicta, nisi alias ullam eligendi ipsum sint exercitationem iste ducimus dolorum tenetur repudiandae in? Accusamus eum, odio aperiam voluptates atque modi provident velit, reprehenderit iure magni labore culpa. Ullam deserunt impedit magni optio magnam sequi culpa reiciendis delectus, harum itaque voluptas neque inventore voluptates quos incidunt perspiciatis quasi repellendus ex tenetur necessitatibus eligendi nesciunt reprehenderit! Enim repudiandae, saepe fugit eveniet consectetur, aliquid quis inventore non placeat quibusdam magnam fuga harum nihil est officiis earum delectus voluptate dicta corrupti culpa dolorem veniam. Hic doloribus sequi accusamus laborum, id ratione magnam quas. Modi adipisci ex, maiores labore doloribus quia et dolore iure eaque totam iusto optio ipsa commodi autem similique eum nemo exercitationem quos. Nam, laudantium veniam? Soluta dolorum magnam, placeat assumenda distinctio architecto a totam numquam. Architecto illum at alias amet commodi quidem aperiam tenetur quae reprehenderit nemo, earum facilis tempore nisi tempora labore rerum? Dolores veritatis earum neque suscipit maxime, nihil quaerat, officia esse corrupti architecto exercitationem harum quis? Ducimus eius aliquam voluptatibus cumque commodi doloremque. Aspernatur veritatis qui veniam tempora maxime neque, aliquam quas, sit corrupti voluptates deleniti. Eveniet ad dolorum odio officia harum pariatur error, recusandae saepe rem quae deserunt amet mollitia numquam, inventore incidunt officiis libero fuga suscipit veritatis et provident ut magni! Fugit officia nemo fugiat error sed, nihil delectus illum neque. Deserunt ducimus corrupti maiores assumenda quis reprehenderit accusamus eius.</p>
+    </div> -->
+    <!-- /dummy -->
+
+
+
+
+    <!-- jQuery JS -->
+    <script src="Js/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Owl carousel 2 CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Isotope JS CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Custom JS -->
+    <script src="Js/script.js"></script>
+</body>
+</html>
